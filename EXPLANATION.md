@@ -1,21 +1,17 @@
-npm start
+* Instructions on how to install and run your code
 
-//Any noteworthy logic/style decisions you made? If so, what is your reasoning?
-- used Javascript rather than Typescript
-- used 'npm' in place of 'yarn' as I use node for my coding
-- created a map instead of a tree with nodes for the company structure 
+* Any noteworthy logic/style decisions you made? If so, what is your reasoning?
+I heavily relied on for loops and writing everything out as variables because I was trying to keep track of all the back and forth. Unfortunately, I misunderstood and thought this was only a coding-focused assignment.
 
-My reason being the short time frame, I am not incredibly familiar with trees outside of BSTs. Other strongly typed language might make this easier with types and built ins. However, I was able to mimic a tree-like structure with the map. I kept all the information from the JSON in case I wanted to use the information with other methods.
+* If you had more time, what improvements would you implement?
+If I had more time I would definitely combine more functions or use more helper functions as I was only doing one at a time and not focused on the DRY aspect of the code. There was a lot of repetition and searches that could be combined.
 
-If you had more time, what improvements would you implement?
-Unfortunately, for this assessment I do recognize that the time constraint is not a matter as I do need to have deeper learning of Trees as data structures. If I had more time, I would have also added methods for the additional information I included. I did not use any styling as I might have misunderstood thinking this was without any front end. A visualization of the company structure would be fun, as well cleaning up code to be dry and concise.
+If I had additional time, I would create the front-end, maybe even visualize the tree as it goes along adding everybody or maybe even animations in the movements, how cute would that be? 
 
-I would definitely give creating the Tree another attempt with a better understanding on how traversing a non-binary tree works. The construction of the tree is what delayed me as I was unsure how to add leaves when the depth continues without heavy recursion or repetitive code. I've attached the node logic as "node logic" in case I could ask someone questions for improvements. :)
+* Bonus: What is the time complexity of each function in your code?
+I believe a lot of the manage employees were O(m+n) or O(m+n+o) due to keeping track of possible descendants of 2 or more employees at a time and having to loop through them to extract the needed information.
 
-//Bonus: What is the time complexity of each function in your code?
+* Bonus: There are two functions that have very similar logic and could be merged into one. Which functions do you think can be merged and why?
+Demote and promote could be the same function as long as the params were dynamic or specific in the input/to the user.
+Also fire employee was the same as promote employee if there were descendants under the fired employee.
 
-//Bonus: There are two functions that have very similar logic and could be merged into one. Which functions do you think can be merged and why?
-
-Combining promote and demote would be beneficial especially if the company already knows who they want to take the lead position.
-
-If fireEmployee is also in junction with a promotion, they all work similarly and could be combined or addressed with a helper function.
